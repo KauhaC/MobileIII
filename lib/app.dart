@@ -7,12 +7,12 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme:  ColorScheme.fromSeed(seedColor: Colors.deepPurpleAccent),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      title: 'Exemplo em aula',
-      home: LoginPage()
+      title: 'Exemplo em Aula',
+      home: LoginPage(),
     );
   }
 }
-

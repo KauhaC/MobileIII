@@ -8,18 +8,18 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  Color corFundo = Colors.deepPurple;
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(
-      title: Text('Home'),
-      backgroundColor: Colors.deepPurple,
-      foregroundColor: Colors.white,
-      centerTitle: true,
-      actions: [
-        IconButton(onPressed: () {}, icon: Icon(Icons.settings)),
-      ],
-    ),);
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Home'),
+        centerTitle: true,
+        backgroundColor: corFundo,
+        foregroundColor: Colors.white,
+        actions: [IconButton(onPressed: () {}, icon: Icon(Icons.settings))],
+      ),
+    );
   }
 }
-
-
